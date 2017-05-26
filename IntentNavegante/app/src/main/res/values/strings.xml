@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Intent Navegante</string>
+    <string name="MainText">Main Activity</string>
+    <string name="SecondText">Second Activity</string>
+    <string name="ButtonText">Ir Second Activity</string>
+</resources>
+
