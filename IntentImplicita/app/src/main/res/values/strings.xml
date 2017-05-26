@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Intent Implicita</string>
+    <string name="intents">Intents</string>
+
+    <!--Nomes dos botões-->
+    <string name="bt_openurl">Abrir URL</string>
+    <string name="bt_call">Chamada</string>
+    <string name="bt_maps">Localização</string>
+    <string name="bt_sms">SMS</string>
+    <string name="bt_share">Compartilhar</string>
+    <string name="bt_websearch">Pesquisar</string>
+    <string name="bt_configdevide">Configurações</string>
+</resources>

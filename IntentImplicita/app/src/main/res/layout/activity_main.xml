@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intents"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        style="@style/title_layout"/>
+
+    <Button
+        android:id="@+id/bt_openurl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_openurl"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="abrirURL"/>
+    <Button
+        android:id="@+id/bt_call"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_call"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="chamadaTel"/>
+    <Button
+        android:id="@+id/bt_maps"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_maps"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="localizacaoMapa"/>
+    <Button
+        android:id="@+id/bt_sms"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_sms"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="enviaSMS"/>
+    <Button
+        android:id="@+id/bt_share"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_share"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="compartilha"/>
+    <Button
+        android:id="@+id/bt_websearch"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_websearch"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="naofunfa"/>
+    <Button
+        android:id="@+id/bt_configdevide"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_configdevide"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="configuracoes"/>
+
+
+
+</LinearLayout>
