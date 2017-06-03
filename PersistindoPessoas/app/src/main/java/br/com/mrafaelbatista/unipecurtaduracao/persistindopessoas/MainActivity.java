@@ -37,16 +37,27 @@ public class MainActivity extends AppCompatActivity {
     public void consulta(View v) {
         Integer i = Integer.parseInt(et_id.getText().toString());
         Pessoa pessoa = Pessoa.findById(Pessoa.class, i);
-        tv.setVisibility(View.VISIBLE);
-        tv.setText(pessoa.getId().toString() + " | " +pessoa.getNome().toString() + " " + pessoa.getSobrenome().toString());
+        if (pessoa != null) {
+            tv.setVisibility(View.VISIBLE);
+            tv.setText(pessoa.getId().toString() + " | " + pessoa.getNome().toString() + " " + pessoa.getSobrenome().toString());
+        } else {
+            Toast.makeText(this, "Registro não encontrado.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void delete(View v){
         Integer i = Integer.parseInt(et_id.getText().toString());
         Pessoa pessoa = Pessoa.findById(Pessoa.class, i);
-        Toast.makeText(this, pessoa.getNome().toString() + " " + pessoa.getSobrenome().toString() +
-                " foi deletada" , Toast.LENGTH_SHORT).show();
-        pessoa.delete();
+
+        if (pessoa != null) {
+            Toast.makeText(this, pessoa.getNome().toString() + " " + pessoa.getSobrenome().toString() +
+                    " foi deletada" , Toast.LENGTH_SHORT).show();
+            pessoa.delete();
+        } else {
+            Toast.makeText(this, "Registro não encontrado", Toast.LENGTH_SHORT).show();
+        }
+
+
     }
 
 
