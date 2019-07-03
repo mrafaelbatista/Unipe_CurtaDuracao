@@ -1,5 +1,4 @@
 # Android Basic Course
-## at Unipê
 
 Android course taught as an extension project at Unipê (Centro Universitátio de João Pessoa).
 
